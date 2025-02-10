@@ -10,15 +10,11 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = await query.message.edit_text(
-    text = f"<b>○ Creator : <a href='http://t.me/DirectFile99'>Click Here</a></b>"
-            )
-            disable_web_page_preview = True,
-            reply_markup = InlineKeyboardMarkup(
+            text=f"<b>○ Creator : <a href='http://t.me/DirectFile99'>Click Here</a></b>",
+            disable_web_page_preview=True,  # ✅ Correct placement
+            reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("✅ Close", callback_data = "close")
-                    ]
+                    [InlineKeyboardButton("✅ Close", callback_data="close")]
                 ]
             )
         )
