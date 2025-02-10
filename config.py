@@ -27,7 +27,7 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://cristi7jjr:tRjSVaoSNQfeZ0Ik@cluster0.kowid.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DB_NAME = os.environ.get("DATABASE_NAME", "DirectFile99Bot")
+DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
@@ -68,7 +68,7 @@ USER_REPLY_TEXT = "Admin only"
 ADMINS.append(OWNER_ID)
 ADMINS.append(7577977996)
 
-LOG_FILE_NAME = "DirectFile99Bot.txt"
+LOG_FILE_NAME = "filesharexbot.txt"
 
 logging.basicConfig(
     level=logging.INFO,
